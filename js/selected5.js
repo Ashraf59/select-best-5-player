@@ -6,7 +6,7 @@ function selectedPlayer(){
     const orderItem = document.getElementById('orderList');
     orderItem.innerHTML = "";
 
-    for(let i = 1; i < playerList.length; i++)
+    for(let i = 0; i < playerList.length; i++)
     {
         const name = playerList[i].playerName;
 
@@ -20,8 +20,10 @@ function selectedPlayer(){
 }
 
 function bestPlayer(element) {
-
+element.disabled = true;
 const playerName = element.parentNode.parentNode.children[0].innerText;
+
+
 
 const playerObj = {
     playerName: playerName
@@ -29,4 +31,6 @@ const playerObj = {
 playerList.push(playerObj);
 
 selectedPlayer(playerList);
+
+
 }
