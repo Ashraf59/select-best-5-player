@@ -1,0 +1,41 @@
+/*..........................
+ Google Font Poppins Link
+ ......................... */
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+ /* ......................
+ Common Style or Utilities
+ ..........................*/
+ body{
+    font-family: 'Poppins', sans-serif;
+ }
+.bg-color{
+    background-color: #000;
+}
+.heading{
+    height: 500px;
+    
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: tomato;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+p.styles{
+    
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+}
