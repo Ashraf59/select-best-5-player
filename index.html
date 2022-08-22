@@ -14,20 +14,160 @@
 
 </head>
 <body>
-
+    <!-- Header Part -->
     <header class="bg-color">
         <section class="heading container-fluid">
             <h1 class="text-style">Select Your Best Five</h1>
             <p class="text-style text-white styles">Select your best player and enjoy the game</p>
         </section>
     </header>
-    
+    <!-- Main Part -->
+    <main class="bg-dark">
+      <section class="container">
+          <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
+            <!-- Player-1 -->
+              <div class="col">
+                <div class="card h-100 bg-dark text-white border border-light">
+                  <img src="image/Messi.jpg" class="card-img-top img-fluid h-50" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-semibold text-center fw-semibold">Lionel Messi</h4>
+                    <div>
+                      <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-1</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Player-2 -->
+              <div class="col">
+                  <div class="card h-100 bg-dark text-white border border-light">
+                      <img src="image/david-beckham.jpg" class="card-img-top img-fluid h-50" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title fw-semibold text-center fw-semibold">David Beckham</h4>
+                        <div>
+                          <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-2</button>
 
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <!-- Player-3 -->
+              <div class="col">
+                  <div class="card h-100 bg-dark text-white border border-light">
+                      <img src="image/cristiano-ronaldo.jpg" class="card-img-top img-fluid h-50" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title fw-semibold text-center fw-semibold">Cristiano Ronaldo</h4>
+                        <div>
+                          <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-3</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <!-- Selected-V player List -->
+              <div class="col">
+                  <div class="card h-100 bg-dark text-white border border-light">
+                    <h3 class="text-center mt-3 fw-semibold">Selected-V</h3>
+                    <div class="card-body">
+                        <ol>
+                            <li>Lionel Messi</li>
+                            <li>David Beckham</li>
+                            <li>Cristiano Ronaldo</li>
+                            <li>Harry Kane</li>
+                            <li>Naymer</li>
+                           
+                        </ol>
+                    </div>
+                  </div>
+                </div>
+  
+            </div>
+          <div class="row row-cols-1 row-cols-md-4 g-4 pb-5">
+            <!-- Player-4 -->
+              <div class="col">
+                <div class="card h-100 bg-dark text-white border border-light">
+                  <img src="image/Harry-Kane.jpg" class="card-img-top img-fluid h-50" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-semibold text-center fw-semibold">Harry Kane</h4>
+                    <div>
+                      <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-4</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Player-5 -->
+              <div class="col">
+                  <div class="card h-100 bg-dark text-white border border-light">
+                      <img src="image/Jake.jpg" class="card-img-top img-fluid h-50" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title fw-semibold text-center fw-semibold">Jake</h4>
+                        <div>
+                          <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-5</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <!-- Player-6 -->
+              <div class="col">
+                  <div class="card h-100 bg-dark text-white border border-light">
+                      <img src="image/ronaldinho.jpg" class="card-img-top img-fluid h-50" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title fw-semibold text-center fw-semibold">Ronal Dinho</h4>
+                        <div>
+                          <button class="btn-design fw-bold" onclick="bestPlayer(this)">Select-6</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <!-- Budget Part -->
+              <div class="col">
+                <div class="card h-100 bg-dark text-white border border-light">
+                  <h3 class="text-center mt-3 fw-semibold">Budget</h3>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-around">
+                      <p>Per Player</p>
+                      <input class="w-50 border border-white bg-dark text-white" type="text">
+                    </div>
+                    <button class="btn-calculate">Calculate</button>
+                    <div class="d-flex justify-content-around mt-3">
+                      <p>Player Expenses</p>
+                      <p>$<span>5000</span></p>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <p>Manager</p>
+                      <input class="w-50 border border-white bg-dark text-white" type="text">
+                    </div>
+                    <div class="d-flex justify-content-around mt-3">
+                      <p>Coach</p>
+                      <input class="w-50 border border-white bg-dark text-white" type="text">
+                    </div>
+                    <button class="btn-calculate font">Calculate Total</button>
+                    <div class="d-flex justify-content-around mt-3">
+                      <p class="fw-bold">Total</p>
+                      <p class="fw-bold text-color">$<span>5000</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+  </main>
+  <div class="p-0 m-0">
+      <hr>
+  </div>
+  <!-- Footer Part -->
+  <footer class="bg-dark py-4">
+      <div>
+          <p class="text-center text-white">Copyright @ 2022 All Rights Reserved.</p>
+      </div>
+  </footer>
 
 
 
      <!-- Bootstrap Script Link -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Link -->
+  <script src="js/selected5.js"></script>
+
 
 </body>
 </html>
